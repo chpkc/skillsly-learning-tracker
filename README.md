@@ -43,3 +43,23 @@ As a future **Data Analyst**, I engineered the application architecture with a f
 1. **Clone the repository**:
    ```bash
    git clone [https://github.com/chpkc/skillsly-learning-tracker.git](https://github.com/chpkc/skillsly-learning-tracker.git)
+   
+2. Install dependencies:
+   ```Bash
+
+    npm install
+
+3. Configure Environment Variables:
+    ```Create a .env file in the root directory and add your Supabase credentials:
+
+    VITE_SUPABASE_URL=your_supabase_project_url
+    VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+
+4. Run the development server:
+    ```Bash
+
+    npm run dev
+
+<p align="center">
+<i>Developed for professional portfolio purposes to demonstrate Full-stack development and Data Analysis capabilities.</i>
+</p>
