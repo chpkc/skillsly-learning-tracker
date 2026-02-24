@@ -1,16 +1,66 @@
-# React + Vite
+📊 Skillsly — Personal Learning Analytics Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+English | Русский
+English
+🎯 Project Overview
 
-Currently, two official plugins are available:
+Skillsly is an MVP application designed to systematize the self-education process. Unlike generic bookmark managers, this project focuses on a data-driven approach to learning: every resource is linked to a specific skill, enabling progress tracking and knowledge gap identification.
+🧬 Data Architecture & Insights
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+As a future Data Analyst, I engineered the architecture with a focus on relational integrity and data aggregation:
 
-## React Compiler
+    Relational Structure: Powered by PostgreSQL (Supabase).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+    Schema Highlights:
 
-## Expanding the ESLint configuration
+        Skills: Primary table for competencies with color-coding for visual categorization.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+        Resources: Contains learning materials linked to skills via uuid[] arrays, allowing one resource to cover multiple competencies.
+
+    Security: Implemented Row Level Security (RLS) to ensure complete data isolation at the database level.
+
+🚀 Key Features
+
+    Interactive Dashboard: Real-time visualization of learning stats, including resource distribution and activity logs.
+
+    Skill Tracking: A dedicated system to manage competencies by stages of mastery.
+
+    Recent Activity: Time-series logging of latest additions to analyze learning dynamics.
+
+🛠 Tech Stack
+
+    Frontend: React (Vite), Tailwind CSS, Framer Motion.
+
+    Backend/DB: Supabase (PostgreSQL).
+
+Русский
+🎯 О проекте
+
+Skillsly — это MVP-приложение для систематизации самообразования. В отличие от обычных менеджеров закладок, этот проект ориентирован на аналитический подход к обучению: каждый ресурс привязан к конкретному навыку, что позволяет наглядно отслеживать прогресс.
+🧬 Архитектура данных
+
+Как будущий аналитик данных, я спроектировал архитектуру с упором на реляционные связи:
+
+    Реляционная структура: Работает на базе PostgreSQL (Supabase).
+
+    Особенности схемы:
+
+        Skills: Таблица компетенций с цветовой маркировкой для визуальной классификации.
+
+        Resources: Материалы, связанные с навыками через массивы uuid[]. Это позволяет одному ресурсу закрывать сразу несколько тем.
+
+    Безопасность: Настроены политики Row Level Security (RLS) для изоляции данных пользователей.
+
+🚀 Ключевые функции
+
+    Интерактивный дашборд: Визуализация статистики обучения и распределения ресурсов в реальном времени.
+
+    Трекер навыков: Система управления компетенциями по этапам освоения.
+
+    Последняя активность: Логирование действий для анализа динамики обучения по времени.
+
+🛠 Технологический стек
+
+    Frontend: React (Vite), Tailwind CSS, Framer Motion.
+
+    Backend/DB: Supabase (PostgreSQL).
